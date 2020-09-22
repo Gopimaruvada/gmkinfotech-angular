@@ -12,6 +12,7 @@ import { TechnologyComponent } from './technology/technology.component';
 import { SolutionComponent } from './solution/solution.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { MobileAppModule } from './mobile-app/mobile-app.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,MobileAppModule
   ],
   providers: [],
   bootstrap: [AppComponent]
