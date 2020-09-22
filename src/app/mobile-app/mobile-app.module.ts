@@ -20,7 +20,7 @@ export const MOBILE_ROUTES: Routes = [
           { path: "native-android", component: NativeAndroidComponent },
           { path: "cross-platform", component: CrossPlatformComponent },
           { path: "hybrid-apps", component: HybridAppsComponent },
-          { path: "pwa", component: HybridAppsComponent },
+          { path: "pwa", component: PwaComponent },
       
       ]
   },
