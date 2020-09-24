@@ -87,6 +87,7 @@ nav.navbar.bootsnav ul.nav li.active > a:hover,
 nav.navbar.bootsnav ul.nav li.active > a:focus,
 nav.navbar.bootsnav ul.nav li.active > a{
     background-color: transparent;
+    color: #fff;
 }
 
 nav.navbar.bootsnav .navbar-toggle{
@@ -547,8 +548,14 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
     
     nav.navbar.bootsnav ul.nav > li > a{
-        padding: 30px 15px;
-        font-weight: 600;
+        padding: 15px 15px;
+       
+        color: #fff;font-size: 15px;
+        font-weight: 500;
+        line-height: 40px;
+        
+        transition: all ease-in-out .5s;
+        -webkit-transition: all ease-in-out .5s;
     }
     
     nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
@@ -780,6 +787,8 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         display: block;
         width: 100%;
         text-align: center;
+        font-size: 40px;
+        font-weight: 600;
     }
     
     nav.bootsnav.navbar-brand-top ul.nav > li.dropdown > ul.dropdown-menu{
@@ -1551,8 +1560,8 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
 
 .navbar-inverse {
-    background-color: transparent !important;
-    border-color: transparent !important;
+    background: rgba(0, 0, 0, 0.5);
+    
 }
 
     .navbar-inverse .navbar-nav > li > a {
@@ -1619,8 +1628,9 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     float: left;
     height: 50px;
     padding: 15px 15px;
-    font-size: 18px;
+    font-size: 40px;
     line-height: 20px;
+    font-weight: 600;
 }
 
 .dropdown-menu {
@@ -1723,11 +1733,11 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
 }
 
 .wraper-home-countdown {
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    /* border-bottom: 1px solid rgba(0,0,0,0.05);
     border-top: 1px solid rgba(0,0,0,0.05);
     padding: 19px;
     margin-top: 61px;
-    background: #fff;
+    background: #fff; */
 }
 
     .wraper-home-countdown > .container {
@@ -1817,7 +1827,12 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     margin-top: 201px;
 }
 
-
+.container-fluid .banner-main .page-title {
+    margin-bottom: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+    opacity: 1;
+}
 
     .home-welcome-main-text h1 {
         font-size: 40px;
@@ -1857,13 +1872,13 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
 .stats_info p {
     font-weight: bold;
     font-size: 40px;
-    color: #666363;
+    color: #fff;
 }
 
 .stats_info h4 {
     font-weight: normal;
-    font-size: 18px;
-    color: #222;
+    font-size: 20px;
+    color: #bdbaba;
 }
 
 .wraper-home-services .home-services-box .home-services-box-item > .holder > .data .h4 {
@@ -2448,7 +2463,7 @@ a.toggle-menu {
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
     padding: 20px;
-    background: #222;
+    background: #000;
 }
 
 .social-medialink a i {
@@ -2523,7 +2538,7 @@ a.toggle-menu {
 
     .footer-widgets .footer-link ul li a {
         font-size: 14px;
-        color: #fff;
+        color: #a5a5a3;
         -webkit-transition: all 0.4s linear 0s;
         -moz-transition: all 0.4s linear 0s;
         -ms-transition: all 0.4s linear 0s;
@@ -2532,7 +2547,7 @@ a.toggle-menu {
     }
 
         .footer-widgets .footer-link ul li a i {
-            color: #ff5e00;
+            color: #a5a5a3;
             margin-right: 8px;
             -webkit-transition: all 0.4s linear 0s;
             -moz-transition: all 0.4s linear 0s;
@@ -2554,7 +2569,11 @@ a.toggle-menu {
     text-decoration:none;
 }
 
- .single-info p{color:#fff;}
+ .single-info p{
+    color: #a5a5a3;
+    font-size: 13px;
+    line-height: 23px;
+ }
 
 
 
@@ -3112,4 +3131,105 @@ h2 {
     .mid-section-bg .page-header-content{
         padding: 20px;
         text-align: center;
+        }
+
+        .fullbody {
+            width: 100%;
+            float: left;
+            /* position: relative; */
+        }
+
+        .videobanner {
+            height: 100vh;
+            overflow: hidden;
+            background-image: url(assets/images/full-bg-poster.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .videobanner:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #000;
+            content: '';
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        .videobanner video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            /* display: none; */
+        }
+
+        .sticky {
+            
+            /* box-shadow: 0 3px 12px 0 rgba(0,0,0,.08); */
+            position: fixed;
+            top: 0;
+            width: 100%;   
+             z-index: 99;
+             border: 0;
+        }
+
+        .textbanner {
+            position: absolute;
+            top: 37%;
+            left: 42%;
+            /* text-align: center; */
+            z-index: 5;
+            /* width: 50%; */
+            padding: 40px;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            transform: translate(-50%, -50%);
+        }
+
+        .container-fluid .banner-main .page-title strong {
+            display: block;
+            margin-bottom: -0.5%;
+            font-weight: inherit;
+            font-size: 160%;
+        }
+
+        .homenumbers {
+            background-color: #fff;
+            background-repeat: repeat;
+            background-size: cover;
+            padding: 30px 0;
+            clear: both;
+            background-image: url(assets/images/counter-bg.jpg);
+            background-attachment: fixed;
+            box-shadow: 0 0px 4px 3px rgba(0, 0, 0, 0.15);
+            position: relative;
+    top: -23px;
+        }
+
+        .homenumbers:before {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background-color: rgba(60, 60, 60, 0.8);
+        }
+
+        .fullpage {
+            position: relative;
+            max-width: 1200px;
+            min-width: 240px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        app-navbar.inner-hdr header {
+            background: #5e5e5e;
+            height: 81px;
         }
