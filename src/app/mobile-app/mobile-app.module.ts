@@ -11,6 +11,11 @@ import { HomeComponent } from '../home/home.component';
 import { ProductDevelopmentModule } from '../product-development/product-development.module';
 import { DesignModule } from '../design/design.module';
 import { WebDevelopmentModule } from '../web-development/web-development.module';
+import { EnterpriseSolutionsComponent } from './enterprise-solutions/enterprise-solutions.component';
+import { EcommerceComponent } from './ecommerce/ecommerce.component';
+import { CmsComponent } from './cms/cms.component';
+import { ApiBackendComponent } from './api-backend/api-backend.component';
+import { CustomDevelopmentComponent } from './custom-development/custom-development.component';
 export const MOBILE_ROUTES: Routes = [
   {
       path: "", component: MobileAppComponent, children: [
@@ -27,7 +32,7 @@ export const MOBILE_ROUTES: Routes = [
 ];
 
 @NgModule({
-  declarations: [MobileAppComponent, NativeIosComponent, NativeAndroidComponent, CrossPlatformComponent, HybridAppsComponent, PwaComponent],
+  declarations: [MobileAppComponent, NativeIosComponent, NativeAndroidComponent, CrossPlatformComponent, HybridAppsComponent, PwaComponent, EnterpriseSolutionsComponent, EcommerceComponent, CmsComponent, ApiBackendComponent, CustomDevelopmentComponent],
   imports: [
     CommonModule,ProductDevelopmentModule,DesignModule,WebDevelopmentModule,
     RouterModule.forChild(
