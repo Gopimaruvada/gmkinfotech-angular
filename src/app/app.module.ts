@@ -14,13 +14,13 @@ import { TechnologyComponent } from './gmk-modules/contact/technology/technology
 import { SolutionComponent } from './gmk-modules/solution/solution.component';
 import { PortfolioComponent } from './gmk-modules/portfolio/portfolio.component';
 import { ContactComponent } from './gmk-modules/contact/contact.component';
-import { NavbarComponent } from './navbar/components/navbar.component';
-import { NavbarModule } from './navbar/navbar.module';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    
+    NavbarComponent,
     FooterComponent,
     HomeComponent,
     HowWeWorkComponent,
@@ -32,12 +32,12 @@ import { NavbarModule } from './navbar/navbar.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,MobileAppModule,NavbarModule
+    AppRoutingModule,MobileAppModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
   exports: [
-    NavbarComponent
+    
 ]
 })
 export class AppModule { }
