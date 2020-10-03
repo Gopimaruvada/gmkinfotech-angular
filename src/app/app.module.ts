@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+
 import { FooterComponent } from './footer/footer.component';
 
 import { MobileAppModule } from './mobile-app/mobile-app.module';
@@ -14,6 +14,7 @@ import { TechnologyComponent } from './gmk-modules/contact/technology/technology
 import { SolutionComponent } from './gmk-modules/solution/solution.component';
 import { PortfolioComponent } from './gmk-modules/portfolio/portfolio.component';
 import { ContactComponent } from './gmk-modules/contact/contact.component';
+import { NavbarComponent } from './navbar/components/navbar.component';
 
 @NgModule({
   declarations: [
