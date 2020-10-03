@@ -3234,3 +3234,287 @@ h2 {
             height: 81px;
         }
 
+        .navbar-collapse {
+            padding-right: 118px;
+            padding-left: 38px;}
+
+
+            .contact-form-sec .form_brand {
+                width: 510px;
+                float: right;
+                margin: 0 auto;
+                margin-bottom: 100px;
+                margin-top: 48px;
+            }
+            .contact-form-sec .form_brand {
+                background-color: #f1f4f5 !important;
+                padding: 30px;
+                box-sizing: border-box;
+            }
+
+            .client-logo {
+                margin: 20px 20px 40px 20px;
+            }
+
+            .enquiry-page-form .client-logo h4 {
+                padding: 40px 0;
+            }
+            .enquiry-page-form .client-logo h4 {
+                font-size: 18px;
+                color: #252b33;
+                letter-spacing: -.33px;
+            }
+            .enquiry-page-form .client-logo h4 {
+                font-weight: 400;
+            }
+            .text-align-center {
+                text-align: center !important;
+            }
+
+            .required-sec {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 150px;
+                border-bottom: 1px solid #d9dee2;
+                padding-bottom: 10px;
+            }
+
+            .required-sec p {
+                color: #252b33;
+                font-weight: 600;
+                font-size: 12px;
+                margin-bottom: 0;
+            }
+
+            .copyright-recaptcha {
+                font-size: 12px;
+                line-height: 18px;
+                color: #252b33;
+                margin-bottom: 0;
+            }
+            .copyright-recaptcha {
+                width: 85%;
+                margin-top: 15px;
+            }
+
+            .copyright-recaptcha p a {
+                color: #f13c31;
+            }
+
+            .form-register input.name {
+                width: 45%;
+                float: left;
+                margin-right: 15px;
+            }
+            .form-register input {
+                background-color: #fff;
+                font-family: Poppins,sans-serif;
+                border: 1px solid #d9dee2;
+                -webkit-appearance: none;
+                height: 40px;
+                display: block;
+                width: 100%;
+                padding: 0 0 0 15px;
+                font-size: 14px;
+                color: #252b33;
+                box-sizing: border-box;
+                border-radius: 0;
+            }
+
+            .contact-form-sec {
+                margin-bottom: 100px;
+            }
+
+            .contact-form-sec .form_brand {
+                width: 510px;
+                float: right;
+                margin: 0 auto;
+                margin-bottom: 100px;
+                margin-top: 48px;
+            }
+            .contact-form-sec .form_brand {
+                background-color: #f1f4f5 !important;
+                padding: 30px;
+                box-sizing: border-box;
+            }
+
+            .form-register .group {
+                position: relative;
+                width: 100%;
+                display: inline-block;
+                padding-bottom: 15px;
+            }
+
+            .form-register .group label {
+                margin-bottom: 10px;
+                display: block;
+                font-size: 13px;
+                color: #252b33;
+                font-weight: 500;
+            }
+
+            .intl-tel-input {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 40px;
+            }
+
+            .intl-tel-input .flag-container {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                /* right: 0; */
+                padding: 0;
+            }
+            .intl-tel-input * {
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                color: #323a45;
+                font-size: 14px;
+                text-align: left;
+            }
+            .intl-tel-input .flag-container {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                /* right: 0; */
+                padding: 0;
+            }
+
+            .intl-tel-input.separate-dial-code .selected-flag {
+                background-color: transparent !important;
+                border-radius: 4px;
+            }
+            .intl-tel-input.allow-dropdown .selected-flag, .intl-tel-input.separate-dial-code .selected-flag {
+                width: 46px;
+            }
+            .intl-tel-input.separate-dial-code .selected-flag {
+                display: table;
+            }
+            .intl-tel-input .selected-flag {
+                z-index: 1;
+                position: relative;
+                width: 100px !important;
+                height: 100%;
+                padding: 0 2px 0 15px;
+            }
+
+            .intl-tel-input .selected-flag .iti-flag {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            .iti-flag.in {
+                height: 14px;
+                background-position: -2413px 0;
+            }
+            .iti-flag {
+                width: 20px;
+                height: 15px;
+                background-image: url(assets/images/flags.ae.png);
+                background-repeat: no-repeat;
+                background-color: #dbdbdb;
+                background-position: 20px 0;
+            }
+
+            .selected-dial-code {
+                position: relative;
+                left: 31px;
+                top: 10px;
+                font-size: 13px;
+            }
+
+            .hide {
+                display: none!important;
+            }
+
+            .contact-form-sec select {
+                border: 1px solid #d9dee2;
+                font-family: Poppins,sans-serif;
+                border-radius: 0;
+                height: 40px;
+                display: block;
+                width: 100%;
+                padding: 0 0 0 15px;
+                color: #252b33;
+                background: url(assets/images/drop-down-arrow.png) right 15px center no-repeat #fff;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                appearance: none;
+                font-size: 14px;
+                box-sizing: border-box;
+            }
+
+            .contact-form-sec textarea {
+                border-radius: 0;
+                font-family: Poppins,sans-serif;
+                border: 1px solid #d9dee2;
+                display: block;
+                width: 100%;
+                padding: 10px 0 25px 15px;
+                font-size: 14px;
+                color: #252b33;
+                background: #fff;
+                resize: none;
+                box-sizing: border-box;
+                -webkit-appearance: none;
+            }
+
+            .projectfileupload {
+                position: relative;
+                width: 100%;
+                height: 40px;
+                border: 1px solid #d9dee2;
+                background: #fff;
+            }
+
+            .projectfileupload input {
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                outline: 0;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            .projectfileupload p {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                color: #252b33;
+                font-size: 14px;
+                line-height: 37px;
+                font-weight: 400;
+                margin-bottom: 0;
+                font-weight: 600;
+            }
+
+            .bottom-area .submit-btn .submit {
+                background-color: #f13c31;
+                border: 2px solid #f13c31;
+                border-radius: 30px;
+                box-sizing: border-box;
+                padding: 8px 24px;
+                text-align: center;
+                margin: 0;
+                font-size: 14px;
+                color: #fff;
+                display: inline-block;
+                outline: 0;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                width: auto !important;
+                font-weight: 600;
+            }
+
+            p.upload-file-size {
+                color: #252b33;
+                font-size: 11px;
+                line-height: 22px;
+                margin: 3px 0 0;
+            }
