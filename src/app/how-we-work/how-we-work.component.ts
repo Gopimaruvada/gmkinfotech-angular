@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./how-we-work.component.css']
 })
 export class HowWeWorkComponent implements OnInit {
-
+  singleClass = true;
   constructor() { }
 
   ngOnInit() {

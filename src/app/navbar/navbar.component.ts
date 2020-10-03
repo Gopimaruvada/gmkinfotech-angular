@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-
+import * as $ from 'jquery' 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -10,6 +10,20 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+     $(function(){
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            });
+    });
+    
   }
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
