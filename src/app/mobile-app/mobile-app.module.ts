@@ -7,7 +7,7 @@ import { CrossPlatformComponent } from './cross-platform/cross-platform.componen
 import { HybridAppsComponent } from './hybrid-apps/hybrid-apps.component';
 import { PwaComponent } from './pwa/pwa.component';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from '../home/home.component';
+
 import { ProductDevelopmentModule } from '../product-development/product-development.module';
 import { DesignModule } from '../design/design.module';
 import { WebDevelopmentModule } from '../web-development/web-development.module';

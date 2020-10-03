@@ -3,10 +3,11 @@ import { Routes, RouterModule, PreloadAllModules, PreloadingStrategy, Route} fro
 import { Observable, timer, of } from 'rxjs';
 import { NgModule } from '@angular/core';
 import { flatMap } from 'rxjs/operators';
-import { HomeComponent } from './home/home.component';
-import { HowWeWorkComponent } from './how-we-work/how-we-work.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent } from './gmk-modules/contact/contact.component';
+import { PortfolioComponent } from './gmk-modules/portfolio/portfolio.component';
+import { HowWeWorkComponent } from './gmk-modules/how-we-work/how-we-work.component';
+import { HomeComponent } from './gmk-modules/home/home.component';
+
 
 // const routes: Routes = [
 //   { path: '', component: HomeComponent  },

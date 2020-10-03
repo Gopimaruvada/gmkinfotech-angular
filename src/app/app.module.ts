@@ -5,14 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
-import { HowWeWorkComponent } from './how-we-work/how-we-work.component';
-import { OurServicesComponent } from './our-services/our-services.component';
-import { TechnologyComponent } from './technology/technology.component';
-import { SolutionComponent } from './solution/solution.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ContactComponent } from './contact/contact.component';
+
 import { MobileAppModule } from './mobile-app/mobile-app.module';
+import { HomeComponent } from './gmk-modules/home/home.component';
+import { HowWeWorkComponent } from './gmk-modules/how-we-work/how-we-work.component';
+import { OurServicesComponent } from './gmk-modules/our-services/our-services.component';
+import { TechnologyComponent } from './gmk-modules/contact/technology/technology.component';
+import { SolutionComponent } from './gmk-modules/solution/solution.component';
+import { PortfolioComponent } from './gmk-modules/portfolio/portfolio.component';
+import { ContactComponent } from './gmk-modules/contact/contact.component';
 
 @NgModule({
   declarations: [
