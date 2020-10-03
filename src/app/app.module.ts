@@ -15,11 +15,12 @@ import { SolutionComponent } from './gmk-modules/solution/solution.component';
 import { PortfolioComponent } from './gmk-modules/portfolio/portfolio.component';
 import { ContactComponent } from './gmk-modules/contact/contact.component';
 import { NavbarComponent } from './navbar/components/navbar.component';
+import { NavbarModule } from './navbar/navbar.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
+    
     FooterComponent,
     HomeComponent,
     HowWeWorkComponent,
@@ -31,9 +32,12 @@ import { NavbarComponent } from './navbar/components/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,MobileAppModule
+    AppRoutingModule,MobileAppModule,NavbarModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [
+    NavbarComponent
+]
 })
 export class AppModule { }
