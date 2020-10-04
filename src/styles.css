@@ -3136,7 +3136,8 @@ h2 {
         .fullbody {
             width: 100%;
             float: left;
-            /* position: relative; */
+            position: relative;
+            top: -23px;
         }
 
         .videobanner {
@@ -3208,7 +3209,7 @@ h2 {
             background-attachment: fixed;
             box-shadow: 0 0px 4px 3px rgba(0, 0, 0, 0.15);
             position: relative;
-    top: -23px;
+    top: -56px;
         }
 
         .homenumbers:before {
