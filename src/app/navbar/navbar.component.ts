@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import * as $ from 'jquery' 
+import { BaseService } from '../services/Base.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -7,9 +8,15 @@ import * as $ from 'jquery'
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public bs: BaseService) {
 
+   }
+   
+ 
   ngOnInit() {
+   
+    this.bs.bgclassnav == false;
+    
      $(function(){
     $(".dropdown").hover(            
             function() {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseService } from 'src/app/services/Base.service';
 declare var $: any;
 @Component({
   selector: 'app-home',
@@ -7,9 +8,12 @@ declare var $: any;
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public bs: BaseService) {
+
+  }
 
   ngOnInit() {
+    this.bs.bgclassnav == false;
   }
 
  

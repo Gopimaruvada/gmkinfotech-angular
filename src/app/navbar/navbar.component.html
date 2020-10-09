@@ -1,6 +1,6 @@
 <header class="" >
-
-    <nav class="navbar navbar-expand-md sticky-top sticky"  (scroll)="onWindowScroll($event);" [ngClass]="{'singleClass' : false}">
+{{navbgclass}}
+    <nav class="navbar navbar-expand-md sticky-top sticky"  (scroll)="onWindowScroll($event);" [ngClass]="bs.bgclassnav? 'bgclassnav' : ''">
 
         <div class="container-fluid quote-wrap">
             <div class="navbar-header">

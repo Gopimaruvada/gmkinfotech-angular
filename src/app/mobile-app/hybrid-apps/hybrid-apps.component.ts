@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseService } from 'src/app/services/Base.service';
 
 @Component({
   selector: 'app-hybrid-apps',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hybrid-apps.component.css']
 })
 export class HybridAppsComponent implements OnInit {
-
-  constructor() { }
+  navbgclass: boolean = true
+  constructor(public bs: BaseService) { }
 
   ngOnInit() {
+    this.bs.bgclassnav  = true;
+    
+    
   }
 
 }
