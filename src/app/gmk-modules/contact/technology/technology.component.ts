@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseService } from 'src/app/services/Base.service';
 
 @Component({
   selector: 'app-technology',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechnologyComponent implements OnInit {
 
-  constructor() { }
+ 
+  constructor(public bs: BaseService) {
+
+  }
 
   ngOnInit() {
+    this.bs.bgclassnav = true;
   }
 
 }

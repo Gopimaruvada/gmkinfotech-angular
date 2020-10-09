@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseService } from 'src/app/services/Base.service';
 
 @Component({
   selector: 'app-continuos-delivery',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContinuosDeliveryComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit() {
+  constructor(public bs: BaseService) {
+
   }
 
+  ngOnInit() {
+    this.bs.bgclassnav = true;
+  }
 }

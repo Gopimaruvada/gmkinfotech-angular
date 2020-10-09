@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
  
   ngOnInit() {
    
-    this.bs.bgclassnav == false;
+
     
      $(function(){
     $(".dropdown").hover(            

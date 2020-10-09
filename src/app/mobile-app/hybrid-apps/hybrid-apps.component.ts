@@ -7,11 +7,11 @@ import { BaseService } from 'src/app/services/Base.service';
   styleUrls: ['./hybrid-apps.component.css']
 })
 export class HybridAppsComponent implements OnInit {
-  navbgclass: boolean = true
+
   constructor(public bs: BaseService) { }
 
   ngOnInit() {
-    this.bs.bgclassnav  = true;
+    this.bs.bgclassnav = true;
     
     
   }

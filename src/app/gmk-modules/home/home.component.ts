@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.bs.bgclassnav == false;
+    this.bs.bgclassnav = false;
   }
 
  

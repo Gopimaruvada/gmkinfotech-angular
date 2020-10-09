@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseService } from 'src/app/services/Base.service';
 
 @Component({
   selector: 'app-api-backend',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ApiBackendComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit() {
+
+  constructor(public bs: BaseService) {
+
   }
 
+  ngOnInit() {
+    this.bs.bgclassnav = true;
+  }
 }

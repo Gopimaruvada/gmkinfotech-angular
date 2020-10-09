@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseService } from 'src/app/services/Base.service';
 
 @Component({
   selector: 'app-ux',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UxComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public bs: BaseService) {
+
+  }
 
   ngOnInit() {
+    this.bs.bgclassnav = true;
   }
+
 
 }
