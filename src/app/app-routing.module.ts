@@ -16,7 +16,7 @@ import { HomeComponent } from './gmk-modules/home/home.component';
 //   { path: 'Contact', component: ContactComponent  },
 // ];
 
-const Spend_ROOT_ROUTES: Routes = [
+const GMK_ROOT_ROUTES: Routes = [
 
   { path: '', component: HomeComponent  },
   { path: 'how-we-work', component: HowWeWorkComponent  },
@@ -50,7 +50,7 @@ const Spend_ROOT_ROUTES: Routes = [
 ];
 @NgModule({
   imports: [
-    RouterModule.forRoot(Spend_ROOT_ROUTES, { useHash: true, onSameUrlNavigation: 'reload' }),
+    RouterModule.forRoot(GMK_ROOT_ROUTES, { useHash: true, onSameUrlNavigation: 'reload' }),
 ],
   exports: [RouterModule]
 
