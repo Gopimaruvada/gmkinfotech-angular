@@ -7,6 +7,7 @@ import { ContactComponent } from './gmk-modules/contact/contact.component';
 import { PortfolioComponent } from './gmk-modules/portfolio/portfolio.component';
 import { HowWeWorkComponent } from './gmk-modules/how-we-work/how-we-work.component';
 import { HomeComponent } from './gmk-modules/home/home.component';
+import { TechnologyComponent } from './gmk-modules/contact/technology/technology.component';
 
 
 // const routes: Routes = [
@@ -20,8 +21,9 @@ const GMK_ROOT_ROUTES: Routes = [
 
   { path: '', component: HomeComponent  },
   { path: 'how-we-work', component: HowWeWorkComponent  },
-   { path: 'portfolio', component: PortfolioComponent  },
+   { path: 'Portfolio', component: PortfolioComponent  },
   { path: 'Contact', component: ContactComponent  },
+  { path: 'Technology', component: TechnologyComponent  },
 
    {
        path: 'mobile-app',
