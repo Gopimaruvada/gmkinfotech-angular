@@ -8,8 +8,11 @@ import { PortfolioComponent } from './gmk-modules/portfolio/portfolio.component'
 import { HowWeWorkComponent } from './gmk-modules/how-we-work/how-we-work.component';
 import { HomeComponent } from './gmk-modules/home/home.component';
 import { TechnologyComponent } from './gmk-modules/contact/technology/technology.component';
+
 import { TermsandconditionsComponent } from './termsandconditions/termsandconditions.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+
+
 
 
 // const routes: Routes = [
@@ -23,7 +26,9 @@ const GMK_ROOT_ROUTES: Routes = [
 
   { path: '', component: HomeComponent  },
   { path: 'how-we-work', component: HowWeWorkComponent  },
-   { path: 'Portfolio', component: PortfolioComponent  },
+   { path: 'portfolio', component: PortfolioComponent  },
+   { path: 'technology', component: TechnologyComponent  },
+
   { path: 'Contact', component: ContactComponent  },
   { path: 'Technology', component: TechnologyComponent  },
   { path: 'Terms', component: TermsandconditionsComponent  },
