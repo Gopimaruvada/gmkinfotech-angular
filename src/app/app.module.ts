@@ -15,6 +15,8 @@ import { SolutionComponent } from './gmk-modules/solution/solution.component';
 import { PortfolioComponent } from './gmk-modules/portfolio/portfolio.component';
 import { ContactComponent } from './gmk-modules/contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TermsandconditionsComponent } from './termsandconditions/termsandconditions.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     TechnologyComponent,
     SolutionComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    TermsandconditionsComponent,
+    PrivacypolicyComponent
   ],
   imports: [
     BrowserModule,
