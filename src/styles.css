@@ -2605,7 +2605,7 @@ a.toggle-menu {
 
 .page-banner-area {
     position: relative;
-    margin-top: 80px;
+   
     min-height: 322px !important;
     max-height: 322px !important;
 }
@@ -2944,17 +2944,17 @@ color: #5e5e5e;}
 }
 
  .page-banner-services {
-          background-image: url(/images/page-banner-services.jpg);
+          background-image: url(../src/assets/images/page-banner-services.jpg);
   background-repeat: no-repeat;
 }
  .page-banner-native-app{
-     background-image: url(/images/page-banner-native-app.jpg);
+     background-image: url(../src/assets/images/page-banner-native-app.jpg);
     background-repeat: no-repeat;
  }
 
 .page-banner{
 position: relative;
-    margin-top: 80px;
+    
     min-height: 322px !important;
     max-height: 322px !important;
 }
@@ -3526,4 +3526,27 @@ h2 {
 
             .navbar{
 border-radius: 0px;
+            }
+
+
+            .page-banner-content .sub-title {
+                font-size: 15px;
+                text-transform: uppercase;
+                font-weight: 900;
+                color: #fff;
+                letter-spacing: 2px;
+                padding-bottom: 0px;
+            }
+
+            .page-banner-content .banner-title {
+                font-size: 38px;
+                font-weight: 900;
+                color: #fff;
+                margin: 0;
+            }
+
+            .banner-title div {
+                background: rgba(0,0,0,.5);
+                width: 70%;
+                padding: 5px;
             }
