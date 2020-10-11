@@ -3523,3 +3523,7 @@ h2 {
             .bgclassnav{
                 background-color: #5e5e5e !important;
             }
+
+            .navbar{
+border-radius: 0px;
+            }
