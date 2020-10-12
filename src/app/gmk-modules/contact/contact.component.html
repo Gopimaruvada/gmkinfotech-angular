@@ -1,153 +1,196 @@
-<app-navbar ></app-navbar>
+<app-navbar></app-navbar>
 <section class="m-t-100">
-  <div class="container">
-      <div class="row">
-          <div class="col-sm-6 enquiry-page-form">
-              <div class="client-logo">
-                  <h4 class="text-align-center">Trusted by</h4>
-                  <div class="client-image client-logo-single">
-                      <img src="/assets/images/inquiry-brand-logo-img.svg" />
-                  </div>
-                  <div class="enquiry-tagline">
-                      <div class="required-sec"><p>All projects secured by NDA &amp; IP is your's</p><p>100% Secure. Zero Spam.</p></div>
-                      <div class="copyright-recaptcha"><p>This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p></div>
-                  </div>
-              </div>
-          </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 enquiry-page-form">
+                <div class="client-logo">
+                    <h4 class="text-align-center">Trusted by</h4>
+                    <div class="client-image client-logo-single">
+                        <img src="/assets/images/inquiry-brand-logo-img.svg" />
+                    </div>
+                    <div class="enquiry-tagline">
+                        <div class="required-sec">
+                            <p>All projects secured by NDA &amp; IP is your's</p>
+                            <p>100% Secure. Zero Spam.</p>
+                        </div>
+                        <div class="copyright-recaptcha">
+                            <p>This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a
+                                    href="#">Terms of Service</a> apply.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <div class="col-sm-6">
-              <div class="contact-form-sec">
-                  <div class="form form_brand form-register form_brand">
+            <div class="col-sm-6">
+                <div class="contact-form-sec">
+                    <div class="form form_brand form-register form_brand">
+                        <form [formGroup]="contactForm" (ngSubmit)="onContactUs()">
 
-                      <div class="group required-field">
-                          <label for="first_name">Name</label>
-                          <input class="first-name name" id="first_name" name="first_name" placeholder="First Name" required="" type="text">
-                          <input class="last-name name" name="last_name" placeholder="Last Name" required="" type="text">
-                          <div class="clearfix"></div>
-                      </div>
+                            <div class="group required-field">
+                                <label for="first_name">Name</label>
+                                <input class="first-name name" id="first_name" name="first_name"
+                                    placeholder="First Name" required formControlName="firstName" type="text">
+                                <input class="last-name name" name="last_name" placeholder="Last Name" required
+                                    formControlName="lastName" type="text">
+                                <div class="clearfix"></div>
+                            </div>
 
-                      <div class="group required-field">
-                          <label for="email">Email</label>
-                          <input class="form-control " id="email" name="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,50})+$" placeholder="Your Email Address" required="" type="email">
-                          <div class="clearfix"></div>
-                      </div>
+                            <div class="group required-field">
+                                <label for="email">Email</label>
+                                <input class="form-control " id="email" name="email"
+                                    pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,50})+$"
+                                    placeholder="Your Email Address" required formControlName="email" type="email">
+                                <div class="clearfix"></div>
+                            </div>
 
-                      <div class="group required-field">
-                          <label for="email">Mobile phone</label>
-                          <div class="intl-tel-input allow-dropdown separate-dial-code iti-sdc-3">
-                              <div class="flag-container">
-                                  <div class="selected-flag" tabindex="0" title="India (भारत): +91">
-                                      <div class="iti-flag in"></div><div class="selected-dial-code">+91</div>
-                                      <div class="iti-arrow"></div>
-                                  </div>
-                                  <ul class="country-list hide">
-                                      <li class="country preferred" data-dial-code="1" data-country-code="us">
-                                          <div class="flag-box"><div class="iti-flag us"></div></div>
-                                          <span class="country-name">United States</span><span class="dial-code">+1</span>
-                                      </li>
-                                      <li class="country preferred" data-dial-code="44" data-country-code="gb">
-                                          <div class="flag-box"><div class="iti-flag gb"></div></div><span class="country-name">United Kingdom</span><span class="dial-code">+44</span>
-                                      </li>
-                                      <li class="divider"></li>
-                                      <li class="country" data-dial-code="93" data-country-code="af"><div class="flag-box"><div class="iti-flag af"></div></div><span class="country-name">Afghanistan (‫افغانستان‬‎)</span><span class="dial-code">+93</span></li>
-                                      <li class="country" data-dial-code="355" data-country-code="al"><div class="flag-box"><div class="iti-flag al"></div></div><span class="country-name">Albania (Shqipëri)</span><span class="dial-code">+355</span></li>
-                                      <li class="country" data-dial-code="213" data-country-code="dz"><div class="flag-box"><div class="iti-flag dz"></div></div><span class="country-name">Algeria (‫الجزائر‬‎)</span><span class="dial-code">+213</span></li>
-                                      <li class="country" data-dial-code="1684" data-country-code="as"><div class="flag-box"><div class="iti-flag as"></div></div><span class="country-name">American Samoa</span><span class="dial-code">+1684</span></li>
-                                     
-                                  </ul>
-                              </div>
-                              <input class="contact-number contact-number-footer" id="contact_number" maxlength="15" name="contact_number" placeholder="" required="" type="tel" autocomplete="off">
-                          </div>
+                            <div class="group required-field">
+                                <label for="email">Mobile phone</label>
+                                <div class="intl-tel-input allow-dropdown separate-dial-code iti-sdc-3">
+                                    <div class="flag-container">
+                                        <div class="selected-flag" tabindex="0" title="India (भारत): +91">
+                                            <div class="iti-flag in"></div>
+                                            <div class="selected-dial-code">+91</div>
+                                            <div class="iti-arrow"></div>
+                                        </div>
+                                        <ul class="country-list hide">
+                                            <li class="country preferred" data-dial-code="1" data-country-code="us">
+                                                <div class="flag-box">
+                                                    <div class="iti-flag us"></div>
+                                                </div>
+                                                <span class="country-name">United States</span><span
+                                                    class="dial-code">+1</span>
+                                            </li>
+                                            <li class="country preferred" data-dial-code="44" data-country-code="gb">
+                                                <div class="flag-box">
+                                                    <div class="iti-flag gb"></div>
+                                                </div><span class="country-name">United Kingdom</span><span
+                                                    class="dial-code">+44</span>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li class="country" data-dial-code="93" data-country-code="af">
+                                                <div class="flag-box">
+                                                    <div class="iti-flag af"></div>
+                                                </div><span class="country-name">Afghanistan (‫افغانستان‬‎)</span><span
+                                                    class="dial-code">+93</span>
+                                            </li>
+                                            <li class="country" data-dial-code="355" data-country-code="al">
+                                                <div class="flag-box">
+                                                    <div class="iti-flag al"></div>
+                                                </div><span class="country-name">Albania (Shqipëri)</span><span
+                                                    class="dial-code">+355</span>
+                                            </li>
+                                            <li class="country" data-dial-code="213" data-country-code="dz">
+                                                <div class="flag-box">
+                                                    <div class="iti-flag dz"></div>
+                                                </div><span class="country-name">Algeria (‫الجزائر‬‎)</span><span
+                                                    class="dial-code">+213</span>
+                                            </li>
+                                            <li class="country" data-dial-code="1684" data-country-code="as">
+                                                <div class="flag-box">
+                                                    <div class="iti-flag as"></div>
+                                                </div><span class="country-name">American Samoa</span><span
+                                                    class="dial-code">+1684</span>
+                                            </li>
 
-                          <div class="clearfix"></div>
-                      </div>
+                                        </ul>
+                                    </div>
+                                    <input class="contact-number contact-number-footer" id="contact_number"
+                                        maxlength="15" name="contact_number" placeholder="" required
+                                        formControlName="mobile" type="tel" autocomplete="off">
+                                </div>
 
-                      <div class="group required-field">
-                          <label for="topic">Select a Service</label> <div>
-                              <select data-ref="topic" id="topic" name="topic" required="" class="ng-pristine ng-invalid has_danger ng-touched">
-                                  <option selected="" value="">Select</option>
-                                  <option value="Mobile Application Development"> Mobile Application Development </option>
-                                  <option value="Web Development"> Web Development </option>
-                                  <option value="Customized Open Source Product"> Customized Open Source Product </option>
-                                  <option value="Consulting - Cloud and DevOps"> Consulting - Cloud and DevOps </option>
-                                  <option value="UI / UX Design"> UI / UX Design </option>
-                                  <option value="IOT / AI / ML or Wearable"> IOT / AI / ML or Wearable </option>
-                                  <option value="Mobile Games Development"> Mobile Games Development </option>
-                                  <option value="QA Service"> QA Service </option>
-                                  <option value="Other"> Other </option>
-                              </select>
-                          </div>
-                      </div>
-                      <div class="budget-group">
-                          <div class="group required-field minimum-budget">
-                              <label class="minimum_budget">Budget</label>
-                              <div>
-                                  <select data-ref="minimum_budget" id="minimum_budget" name="minimum_budget" required="" class="">
-                                      <option selected="" value="">Select</option>
-                                      <option value="<$5K"> &lt;$5K </option>
-                                      <option value="$10K+"> $10K+ </option>
-                                      <option value="$25k+"> $25k+ </option>
-                                      <option value="$50k+"> $50k+ </option>
-                                      <option value="$100k+ "> $100k+  </option>
-                                      <option value="Not sure"> Not sure </option>
-                                  </select>
-                              </div>
-                          </div>
-                          <div class="group required-field minimum-budget">
-                              <label class="minimum_budget">How soon you want to start? </label>
-                              <div>
-                                  <select data-ref="minimum_budget" id="minimum_budget" name="minimum_budget" required="" class="">
-                                      <option selected="" value="">Select</option>
-                                      <option value="<$5K"> Right now </option>
-                                      <option value="$10K+"> In few week </option>
-                                      <option value="$25k+"> In few month </option>
-                                      <option value="$50k+"> Not sure </option>
+                                <div class="clearfix"></div>
+                            </div>
 
-                                  </select>
-                              </div>
-                          </div>
+                            <div class="group required-field">
+                                <label for="topic">Select a Service</label>
+                                <div>
+                                    <select data-ref="topic" id="topic" name="topic" required formControlName="service"
+                                        class="ng-pristine ng-invalid has_danger ng-touched">
+                                        <option selected="" value="">Select</option>
+                                        <option value="Mobile Application Development"> Mobile Application Development
+                                        </option>
+                                        <option value="Web Development"> Web Development </option>
+                                        <option value="Customized Open Source Product"> Customized Open Source Product
+                                        </option>
+                                        <option value="Consulting - Cloud and DevOps"> Consulting - Cloud and DevOps
+                                        </option>
+                                        <option value="UI / UX Design"> UI / UX Design </option>
+                                        <option value="IOT / AI / ML or Wearable"> IOT / AI / ML or Wearable </option>
+                                        <option value="Mobile Games Development"> Mobile Games Development </option>
+                                        <option value="QA Service"> QA Service </option>
+                                        <option value="Other"> Other </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="budget-group">
+                                <div class="group required-field minimum-budget">
+                                    <label class="minimum_budget">Budget</label>
+                                    <div>
+                                        <select data-ref="minimum_budget" id="minimum_budget" name="minimum_budget"
+                                            required formControlName="budget" class="">
+                                            <option selected="" value="">Select</option>
+                                            <option value="<$5K"> &lt;$5K </option>
+                                            <option value="$10K+"> $10K+ </option>
+                                            <option value="$25k+"> $25k+ </option>
+                                            <option value="$50k+"> $50k+ </option>
+                                            <option value="$100k+ "> $100k+ </option>
+                                            <option value="Not sure"> Not sure </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="group required-field minimum-budget">
+                                    <label class="minimum_budget">How soon you want to start? </label>
+                                    <div>
+                                        <select data-ref="minimum_budget" id="minimum_budget" name="minimum_budget"
+                                            required formControlName="urgency" class="">
+                                            <option selected="" value="">Select</option>
+                                            <option value="Right now"> Right now </option>
+                                            <option value="In few weeks"> In few weeks </option>
+                                            <option value="In few month"> In few month </option>
+                                            <option value="Not sure"> Not sure </option>
+
+                                        </select>
+                                    </div>
+                                </div>
 
 
-                          <div class="clearfix"></div>
-                      </div>
-                      <div class="group required-field">
-                          <label for="topic">Requirement</label> <div>
-                              <select id="requesting_new_project" name="requesting_new_project" required="" class="">
-                                  <option selected="" value="">Select</option>
-                                  <option value="Hire Dedicated Team"> Hire Dedicated Team </option>
-                                  <option value="New Project"> New Project </option>
-                                  <option value="Existing Project"> Existing Project </option>
-                                  <option value="Support - Maintenance"> Support - Maintenance </option>
-                              </select>
-                          </div>
-                      </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="group required-field">
+                                <label for="topic">Requirement</label>
+                                <div>
+                                    <select id="requesting_new_project" name="requesting_new_project" required
+                                        formControlName="requirement" class="">
+                                        <option selected="" value="">Select</option>
+                                        <option value="Hire Dedicated Team"> Hire Dedicated Team </option>
+                                        <option value="New Project"> New Project </option>
+                                        <option value="Existing Project"> Existing Project </option>
+                                        <option value="Support - Maintenance"> Support - Maintenance </option>
+                                    </select>
+                                </div>
+                            </div>
 
-                      <div class="group">
-                          <label for="message">Brief about the project</label>
-                          <textarea id="message" name="message" placeholder="" required="" rows="2" class=""></textarea>
-                      </div>
-                      <div class="group file-upload-sec">
-                          <label for="file">Have a file to share?</label>
-                          <div class="projectfileupload">
-                              <input id="inputfile" type="file" class="form-control-file text-danger font-weight-bold">
-                              <p id="inputfiledetail">Select or Drop your file here</p>
-                          </div>
-                          <p class="upload-file-size"> Only Document, Image or ZIP file. Max size 8MB</p>
-                      </div>
-                      <div class="bottom-area">
-                          <div class="submit-btn">
-                              <button class="submit btn" id="submitEnquiryForm" type="button">Get Started </button>
-                          </div>
+                            <div class="group">
+                                <label for="message">Brief about the project</label>
+                                <textarea id="message" name="message" placeholder="" required formControlName="about"
+                                    rows="2" class=""></textarea>
+                            </div>
+                          
+                            <div class="bottom-area">
+                                <div class="submit-btn">
+                                    <button class="submit btn" id="submitEnquiryForm" type="submit">Get Started
+                                    </button>
+                                </div>
 
-                      </div>
+                            </div>
+                        </form>
                     </div>
 
-              </div>
-          </div>
+                </div>
+            </div>
 
-      </div>
+        </div>
 
-  </div>
+    </div>
 </section>
-
-

@@ -7,10 +7,11 @@ import { ContactComponent } from './gmk-modules/contact/contact.component';
 import { PortfolioComponent } from './gmk-modules/portfolio/portfolio.component';
 import { HowWeWorkComponent } from './gmk-modules/how-we-work/how-we-work.component';
 import { HomeComponent } from './gmk-modules/home/home.component';
-import { TechnologyComponent } from './gmk-modules/contact/technology/technology.component';
+
 
 import { TermsandconditionsComponent } from './termsandconditions/termsandconditions.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { TechnologyComponent } from './gmk-modules/technology/technology.component';
 
 
 
@@ -22,7 +23,7 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
 //   { path: 'Contact', component: ContactComponent  },
 // ];
 
-const GMK_ROOT_ROUTES: Routes = [
+const ROOT_ROUTES: Routes = [
 
   { path: '', component: HomeComponent  },
   { path: 'Home', component: HomeComponent  },
@@ -31,7 +32,7 @@ const GMK_ROOT_ROUTES: Routes = [
    { path: 'technology', component: TechnologyComponent  },
 
   { path: 'Contact', component: ContactComponent  },
-  { path: 'Technology', component: TechnologyComponent  },
+
   { path: 'Terms', component: TermsandconditionsComponent  },
 
   { path: 'privacy', component: PrivacypolicyComponent  },
@@ -62,7 +63,7 @@ const GMK_ROOT_ROUTES: Routes = [
 ];
 @NgModule({
   imports: [
-    RouterModule.forRoot(GMK_ROOT_ROUTES, { useHash: true, onSameUrlNavigation: 'reload' }),
+    RouterModule.forRoot(ROOT_ROUTES, {onSameUrlNavigation: 'reload' ,scrollPositionRestoration:'top'}),
 ],
   exports: [RouterModule]
 

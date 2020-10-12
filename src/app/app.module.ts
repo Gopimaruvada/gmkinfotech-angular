@@ -10,13 +10,15 @@ import { MobileAppModule } from './mobile-app/mobile-app.module';
 import { HomeComponent } from './gmk-modules/home/home.component';
 import { HowWeWorkComponent } from './gmk-modules/how-we-work/how-we-work.component';
 import { OurServicesComponent } from './gmk-modules/our-services/our-services.component';
-import { TechnologyComponent } from './gmk-modules/contact/technology/technology.component';
+
 import { SolutionComponent } from './gmk-modules/solution/solution.component';
 import { PortfolioComponent } from './gmk-modules/portfolio/portfolio.component';
 import { ContactComponent } from './gmk-modules/contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TermsandconditionsComponent } from './termsandconditions/termsandconditions.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TechnologyComponent } from './gmk-modules/technology/technology.component';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
   imports: [
     BrowserModule,
     AppRoutingModule,MobileAppModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
