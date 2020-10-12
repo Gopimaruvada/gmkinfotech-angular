@@ -1332,7 +1332,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     /* Tabs
     =================================*/ 
     nav.navbar.bootsnav .megamenu-content.tabbed{
-        padding-left: 0 !mportant;
+        padding-left: 0 !important;
     }
     
     nav.navbar.bootsnav .tabbed > li{
@@ -3244,8 +3244,7 @@ h2 {
                 width: 510px;
                 float: right;
                 margin: 0 auto;
-                margin-bottom: 100px;
-                margin-top: 48px;
+                
             }
             .contact-form-sec .form_brand {
                 background-color: #f1f4f5 !important;
@@ -3323,16 +3322,13 @@ h2 {
                 border-radius: 0;
             }
 
-            .contact-form-sec {
-                margin-bottom: 100px;
-            }
 
             .contact-form-sec .form_brand {
                 width: 510px;
                 float: right;
                 margin: 0 auto;
                 margin-bottom: 100px;
-                margin-top: 48px;
+               
             }
             .contact-form-sec .form_brand {
                 background-color: #f1f4f5 !important;
@@ -3397,7 +3393,7 @@ h2 {
             .intl-tel-input .selected-flag {
                 z-index: 1;
                 position: relative;
-                width: 100px !important;
+                width: 75px !important;
                 height: 100%;
                 padding: 0 2px 0 15px;
             }
