@@ -25,6 +25,7 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
 const GMK_ROOT_ROUTES: Routes = [
 
   { path: '', component: HomeComponent  },
+  { path: 'Home', component: HomeComponent  },
   { path: 'how-we-work', component: HowWeWorkComponent  },
    { path: 'portfolio', component: PortfolioComponent  },
    { path: 'technology', component: TechnologyComponent  },
