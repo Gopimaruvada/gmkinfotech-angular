@@ -1639,8 +1639,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
 
 .quote-wrap {
     position: relative;
-    padding-left: 5% !important;
-    padding-right: 5% !important;
+   
     padding-top: 10px;
     padding-bottom: 10px;
     width: 90%;
