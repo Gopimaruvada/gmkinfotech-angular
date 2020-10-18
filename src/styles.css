@@ -2538,7 +2538,7 @@ a.toggle-menu {
 
     .footer-widgets .footer-link ul li a {
         font-size: 14px;
-        color: #a5a5a3;
+        color: #fff;
         -webkit-transition: all 0.4s linear 0s;
         -moz-transition: all 0.4s linear 0s;
         -ms-transition: all 0.4s linear 0s;
@@ -2547,7 +2547,7 @@ a.toggle-menu {
     }
 
         .footer-widgets .footer-link ul li a i {
-            color: #a5a5a3;
+            color: #fff;
             margin-right: 8px;
             -webkit-transition: all 0.4s linear 0s;
             -moz-transition: all 0.4s linear 0s;
