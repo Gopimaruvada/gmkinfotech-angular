@@ -2463,7 +2463,7 @@ a.toggle-menu {
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
     padding: 20px;
-    background: #000;
+    background: #444d58;
 }
 
 .social-medialink a i {
@@ -2570,8 +2570,8 @@ a.toggle-menu {
 }
 
  .single-info p{
-    color: #a5a5a3;
-    font-size: 13px;
+    color: #fff;
+    font-size: 15px;
     line-height: 23px;
  }
 
