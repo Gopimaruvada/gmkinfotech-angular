@@ -3,18 +3,13 @@
     <nav class="navbar navbar-expand-md sticky-top sticky"  (scroll)="onWindowScroll($event);" [ngClass]="bs.bgclassnav? 'bgclassnav' : ''">
 
         <div class="container-fluid quote-wrap">
-            <div class="navbar-header col-md-4">
-                <!-- <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button> -->
-                <a class="navbar-brand logo-light" routerLink="/">
-                    Change Experts
+            <div class="navbar-header ">
+             
+                <a routerLink="/">
+                    <img style="width:60px; height:60px"  src="/assets/images/logo.jpeg" alt=""  >
                 </a>
             </div>
-            <div class="col-md-8" style="float: right;">
+            <div style="float: right;">
                 <nav class="navbar navbar-default navbar-mobile bootsnav on" style="float: right;">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
@@ -102,11 +97,23 @@
                             <li><a routerLink="/portfolio" >Portfolio <span></span></a></li>
                          
                             <li><a routerLink="/Contact"  >Contact <span></span></a></li>
+                           
                         </ul>
+                        <div data-aos="fade-left" class="h_social aos-init aos-animate">
+                            <div class="h_socialinner">
+                                <ul>
+                                 
+                                   
+                                    <li><a href="tel:+91 9948742791"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>+91 9948742791</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
                     </div>
+                    
                 </nav>
             </div>
-           <!-- /.nav-collapse -->
+         
         </div>
 
     </nav>
