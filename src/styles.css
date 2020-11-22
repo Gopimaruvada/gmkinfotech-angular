@@ -3240,12 +3240,10 @@ h2 {
             padding-left: 38px;}
 
 
-            .contact-form-sec .form_brand {
-                width: 510px;
-                float: right;
-                margin: 0 auto;
-                
-            }
+         .contact-form-sec{
+             margin:10px;
+             float: right;
+         }
             .contact-form-sec .form_brand {
                 background-color: #f1f4f5 !important;
                 padding: 30px;
@@ -3324,9 +3322,8 @@ h2 {
 
 
             .contact-form-sec .form_brand {
-                width: 510px;
-                float: right;
-                margin: 0 auto;
+               
+               
                 margin-bottom: 100px;
                
             }
@@ -3518,6 +3515,7 @@ h2 {
 
             .bgclassnav{
                 background-color: #fff !important;
+                border-bottom:1px solid #ccc;
             }
 
             .navbar{
@@ -3628,3 +3626,24 @@ border-radius: 0px;
                 border-top: 39px solid transparent;
                 border-bottom: 39px solid transparent;
             } */
+ .contus{
+     padding-right:0px !important;
+     padding-left: 0px !important;
+ }
+
+            .cont-top-bg{
+                background-image: url("assets/images/contact_top_bg.jpg");
+                background-repeat: no-repeat; 
+                height:400px !important;
+                
+            }
+
+            .cont-top-bg h1{
+                color:#fff;
+                text-align: center;
+              
+                width: 95%;
+                position: absolute;
+  top: 45%;
+            }
+            
