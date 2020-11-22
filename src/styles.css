@@ -3547,6 +3547,7 @@ border-radius: 0px;
 
             .navbar-inverse{
                 background-color:#fff;
+                border-bottom:1px solid #ccc;
             }
 
 
