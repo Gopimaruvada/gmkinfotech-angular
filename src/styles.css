@@ -3647,3 +3647,10 @@ border-radius: 0px;
   top: 45%;
             }
             
+            .p-l-r-0{
+                padding-left:0px; padding-right:0px;
+            }
+
+            .p-10{
+                padding:10px;
+            }
