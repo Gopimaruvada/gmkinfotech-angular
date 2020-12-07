@@ -2943,8 +2943,13 @@ color: #5e5e5e;}
 }
 
  .page-banner-services {
-          background-image: url(../src/assets/images/page-banner-services.jpg);
+          background-image: url(../src/assets/images/about_top_bg.jpg);
   background-repeat: no-repeat;
+}
+
+.page-banner-technology {
+    background-image: url(../src/assets/images/Mobility_banner.png);
+background-repeat: no-repeat;
 }
  .page-banner-native-app{
      background-image: url(../src/assets/images/page-banner-native-app.jpg);
